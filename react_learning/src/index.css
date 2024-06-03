@@ -73,3 +73,17 @@ border:#fb00ff 1px solid;
    align-items: center;
    justify-content: center;
 }
+
+.fbStats {
+   display: flex;
+   justify-content: space-between;
+   width: 400px;
+}
+
+.btnColor-purple {
+   background-color: #fb00ff;
+}
+
+.btnColor-purple:hover {
+   background-color: #fb00ff5f;
+}

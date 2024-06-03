@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import feedBackData from "./data/FeedBackData";
 import FeedbackList from "./components/FeedbackList";
 import FeedbackStats from "./components/FeedbackStats";
+import Form from "./components/Form";
 
 const App = () => {
 
@@ -18,6 +19,8 @@ const App = () => {
       <>
          <Header />
          <div className="container flex-column align-items-center">
+            <Form />
+            <FeedbackStats feedback={feedback} />
             <FeedbackList userFeedback={feedback} deleteItem={deleteFeedback} />
          </div>
 
