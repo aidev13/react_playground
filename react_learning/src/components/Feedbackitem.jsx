@@ -1,13 +1,23 @@
+import Card from "./Card"
+import { FaTimes} from 'react-icons/fa'
+import propTypes from 'prop-types'
 
+const Feedbackitem = props => {
 
-const Feedbackitem = () => {
+   
+
   return (
-    <div className="card">
-      <div className="num-display">10</div>
-      <div className="text-display m-3">This is an example of a feedback item</div>
-      
-    </div>
+    <Card >
+      <div className="num-display">{props.item.rating}</div>
+      <button onClick={() => props.deleteItem(props.item.id)} className="close"><FaTimes color="purple"/></button>
+      <div className="text-display m-3">{props.item.text}</div>
+    </Card>
   )
 }
+
+Feedbackitem.propTypes = {
+   item: propTypes.object.isRequired,
+}
+
 
 export default Feedbackitem

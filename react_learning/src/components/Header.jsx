@@ -10,7 +10,7 @@ const Header = ({ text, bgColor, textColor}) => {
 
    return (
       <header style={headerStyles}>
-         <div className="container p-3">
+         <div className="d-flex justify-content-center p-3">
             <h1>{text}</h1>
          </div>
       </header>

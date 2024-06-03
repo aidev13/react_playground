@@ -4,6 +4,7 @@ body {
    /* margin: 0; */
    background-color: #333;
    font-family: poppins;
+   color: white;
 }
 
 h1 {
@@ -15,7 +16,6 @@ h1 {
    justify-content: center;
    max-width: 768px;
    margin: auto;
-
  }
 
 .card {
@@ -25,6 +25,7 @@ h1 {
    padding: 40px 50px;
    margin: 20px 0;
    position: relative;
+   width: 550px;
  }
 
  .num-display {
@@ -46,4 +47,29 @@ h1 {
    display: flex;
    justify-content: center;
    align-items: center;
+}
+
+.card.dark-mode {
+background-color: rgba(0,0,0,0.4);
+color: white;
+border:#fb00ff 1px solid;
+ .num-display {
+   border: #fb00ff 2px solid;
+   background-color: #ffffff;
+   color: black;
+ }
+}
+
+.close {
+   display: flex;
+   position: absolute;
+   left: 505px;
+   top: 5px;
+   border: none;
+   background-color: transparent;
+   height: 35px;
+   width: 35px;
+   border-radius: 50%;
+   align-items: center;
+   justify-content: center;
 }
