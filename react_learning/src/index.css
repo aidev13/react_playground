@@ -80,10 +80,19 @@ border:#fb00ff 1px solid;
    width: 400px;
 }
 
-.btnColor-purple {
+.btn-Color-purple {
    background-color: #fb00ff;
 }
 
-.btnColor-purple:hover {
+.btn-Color-purple:hover {
    background-color: #fb00ff5f;
 }
+
+.btn-secondary {
+   background-color: #333;
+}
+
+.btn-secondary:hover {
+   background-color: #33333371;
+}
+
